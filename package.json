@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "name": "com.jonathanwkelly.midisender",
+    "cordova_name": "MIDISender",
+    "description": "MIDI Communication Plugin",
+    "license": "Apache 2.0",
+    "repo": "https://github.com/jonathanwkelly/cordova-plugin-midi-sender.git",
+    "issue": "https://github.com/jonathanwkelly/cordova-plugin-midi-sender/issues",
+    "keywords": [
+        "cordova",
+        "MIDI",
+        "Program",
+        "Change",
+        "CoreAudio"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.1.0"
+        }
+    ]
+}

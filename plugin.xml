@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.jonathanwkelly.midisender" version="0.1.0">
+    <name>MIDISender</name>
+    <description>Send and Receive MIDI messages through attached interfaces</description>
+    <license>Apache 2.0</license>
+    <keywords>MIDI,coreaudio,program,change</keywords>
+    <repo>https://github.com/jonathanwkelly/cordova-plugin-midi-sender.git</repo>
+    <issue>https://github.com/jonathanwkelly/cordova-plugin-midi-sender/issues</issue>
+
+    <js-module src="www/midisender.js" name="midisender">
+        <clobbers target="cordova.plugins.MIDISender" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        
+        <config-file target="config.xml" parent="/*">
+            <feature name="MIDISender">
+                <param name="ios-package" value="MIDISender" onload="true" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/MIDISender.h" />
+        <source-file src="src/ios/MIDISender.m" />
+        
+        <framework src="CoreMIDI.framework" />
+    </platform>
+
+</plugin>
